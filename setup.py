@@ -53,7 +53,7 @@ setup(
     ],
     desktop_entries={
         'play-with-mpv': {
-            'filename': 'thann.play-with-mpv',
+            'filename': 'duskyBabz.play-with-mpv-custom',
             'Name': 'Play With MPV (server)',
             'Categories': 'AudioVideo;Audio;Video;Player;TV',
             'Comment': description,

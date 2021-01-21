@@ -40,13 +40,13 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler, CompatibilityMixin):
         except:
             query = {}
         if query.get('mpv_args'):
-            print("MPV ARGS:", query.get('mpv_args'))
+            #print("MPV ARGS:", query.get('mpv_args'))
         if "play_url" in query:
             urls = str(query["play_url"][0])
             #f = open("play_with_mpv.log", "a")
             #f.write(urls + "\n")
             #f.close()
-            print("test: url "+ urls + "\n")
+            #print("test: url "+ urls + "\n")
             Popen(['mpv', urls] + query.get("mpv_args", []))
             self.respond(200, "playing...")
         else:
@@ -55,11 +55,11 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler, CompatibilityMixin):
 
 def start():
     httpd = BaseHTTPServer.HTTPServer((hostname, PORT), Handler)
-    print("serving on {}:{}".format(hostname, PORT))
+    #print("serving on {}:{}".format(hostname, PORT))
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
-        print(" shutting down...")
+        #print(" shutting down...")
         httpd.shutdown()
 
 

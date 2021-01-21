@@ -41,7 +41,7 @@ setup(
     ],
 
     py_modules=["play_with_mpv"],
-    install_requires=['wheel', 'youtube-dl'],
+    install_requires=['wheel'],
     entry_points={
         'gui_scripts': [
             'play-with-mpv=play_with_mpv:start',

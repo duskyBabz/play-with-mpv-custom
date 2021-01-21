@@ -39,7 +39,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler, CompatibilityMixin):
             query = urlparse.parse_qs(url.query)
         except:
             query = {}
-        if query.get('mpv_args'):
+        #if query.get('mpv_args'):
             #print("MPV ARGS:", query.get('mpv_args'))
         if "play_url" in query:
             urls = str(query["play_url"][0])

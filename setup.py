@@ -32,7 +32,7 @@ setup(
     description = description,
     license = "MIT",
     keywords = "mpv video play chrome extension",
-    url = "http://github.com/thann/play-with-mpv",
+    url = "http://github.com/duskyBabz/play-with-mpv-custom",
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",

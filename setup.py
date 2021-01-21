@@ -26,7 +26,6 @@ def get_version():
 
 setup(
     name = "play-with-mpv-custom",
-    version = 1.0.0,
     description = description,
     license = "MIT",
     keywords = "mpv video play chrome extension",

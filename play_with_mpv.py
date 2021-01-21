@@ -43,7 +43,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler, CompatibilityMixin):
             print("MPV ARGS:", query.get('mpv_args'))
         if "play_url" in query:
             urls = str(query["play_url"][0])
-            pipe = Popen(['mpv', urls, '--force-window'] + query.get("mpv_args", []))
+            #pipe = Popen(['mpv', urls, '--force-window'] + query.get("mpv_args", []))
             self.respond(200, "playing...")
         else:
             self.respond(400)

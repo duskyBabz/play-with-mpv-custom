@@ -25,7 +25,7 @@ def get_version():
             run('git', 'rev-parse', '--short', 'HEAD')))
 
 setup(
-    name = "play-with-mpv-custom",
+    name = "play-with-mpv",
     description = description,
     license = "MIT",
     keywords = "mpv video play chrome extension",

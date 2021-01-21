@@ -1,4 +1,4 @@
-Forked from https://github.com/Thann/play-with-mpv to try to fix an issue, **this is not my work.**
+Mirrored from https://github.com/Thann/play-with-mpv to try to fix an issue, **this is not my work.**
 
 # Play with MPV
 Chrome extension and python server that allows you to play videos in webpages with MPV instead.  

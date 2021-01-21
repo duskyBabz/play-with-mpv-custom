@@ -25,10 +25,8 @@ def get_version():
             run('git', 'rev-parse', '--short', 'HEAD')))
 
 setup(
-    name = "play-with-mpv",
-    version = get_version(),
-    author = "Jonathan Knapp",
-    author_email = "jaknapp8@gmail.com",
+    name = "play-with-mpv-custom",
+    version = 1.0.0,
     description = description,
     license = "MIT",
     keywords = "mpv video play chrome extension",
@@ -52,7 +50,7 @@ setup(
         "https://github.com/thann/install_freedesktop/tarball/master#egg=install_freedesktop-0.2.0"
     ],
     desktop_entries={
-        'play-with-mpv': {
+        'play-with-mpv-custom': {
             'filename': 'duskyBabz.play-with-mpv-custom',
             'Name': 'Play With MPV (server)',
             'Categories': 'AudioVideo;Audio;Video;Player;TV',
